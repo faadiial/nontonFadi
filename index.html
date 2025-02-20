@@ -30,16 +30,16 @@
     <div class="container mx-auto p-4 flex flex-col md:flex-row gap-4 flex-grow">
         <!-- Video Section -->
         <div class="md:w-3/4 w-full bg-black rounded-lg overflow-hidden">
-            <iframe class="w-full h-[400px] md:h-[600px] lg:h-[800px]" src="https://www.youtube.com/embed/zYTnUSIp-qA" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video-frame" class="w-full h-[400px] md:h-[600px] lg:h-[800px]" src="https://www.youtube.com/embed/zYTnUSIp-qA" frameborder="0" allowfullscreen></iframe>
         </div>
         
         <!-- Prestasi Section -->
         <div class="md:w-1/4 w-full bg-gray-200 p-4 rounded-lg flex flex-col space-y-2">
-            <button class="w-full bg-white py-2 px-4 rounded shadow hover:bg-gray-300 transition">Prestasi 1</button>
-            <button class="w-full bg-white py-2 px-4 rounded shadow hover:bg-gray-300 transition">Prestasi 2</button>
-            <button class="w-full bg-white py-2 px-4 rounded shadow hover:bg-gray-300 transition">Prestasi 3</button>
-            <button class="w-full bg-white py-2 px-4 rounded shadow hover:bg-gray-300 transition">Prestasi 4</button>
-            <button class="w-full bg-white py-2 px-4 rounded shadow hover:bg-gray-300 transition">Prestasi 5</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/LPSoVbxN_ww')" class="w-full bg-white py-2 px-4 rounded shadow hover:bg-gray-300 transition">Prestasi 1</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/hcmf_DfvcgM')" class="w-full bg-white py-2 px-4 rounded shadow hover:bg-gray-300 transition">Prestasi 2</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/z3imO47FhkY')" class="w-full bg-white py-2 px-4 rounded shadow hover:bg-gray-300 transition">Prestasi 3</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/dvkYjn7CZzg')" class="w-full bg-white py-2 px-4 rounded shadow hover:bg-gray-300 transition">Prestasi 4</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/UHuTG14DRYU')" class="w-full bg-white py-2 px-4 rounded shadow hover:bg-gray-300 transition">Prestasi 5</button>
         </div>
     </div>
     
@@ -47,6 +47,12 @@
         <div class="w-full overflow-hidden">
             <div class="running-text">Selamat Datang di Website Prestasi Moklet! 🔥 Selamat Datang di Website Prestasi Moklet! 🔥</div>
         </div>
-    </it footer>
+    </footer>
+    
+    <script>
+        function changeVideo(url) {
+            document.getElementById('video-frame').src = url;
+        }
+    </script>
 </body>
 </html>
